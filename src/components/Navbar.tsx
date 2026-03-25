@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const menuItems = [
@@ -37,9 +38,12 @@ export default function Navbar() {
       >
         {/* Left: Logo */}
         <Link href="/" style={{ display: "flex", alignItems: "center", gap: "0.75rem", textDecoration: "none" }}>
-          <img 
+          <Image 
             src="/Wicys%20Logo.png" 
             alt="WiCyS Logo" 
+            width={200}
+            height={70}
+            priority
             style={{ height: "70px", width: "auto", objectFit: "contain" }} 
           />
         </Link>
@@ -134,7 +138,21 @@ export default function Navbar() {
           transform: "translateY(-50%)",
           display: "flex", flexDirection: "column", gap: "1rem",
         }}>
-          {["IG", "in", "▶"].map((icon, i) => (
+          <a href="https://www.instagram.com/wicys_sathyabama/" target="_blank" rel="noopener noreferrer" className="social-icon" title="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/wicys-sathyabama-student-chapter/" target="_blank" rel="noopener noreferrer" className="social-icon" title="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          {["▶"].map((icon, i) => (
             <a key={i} href="#" className="social-icon">{icon}</a>
           ))}
         </div>

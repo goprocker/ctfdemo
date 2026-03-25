@@ -114,7 +114,7 @@ export default function Footer() {
               FOLLOW US
             </h3>
             <a
-              href="https://www.instagram.com/obscura.iiitdm/"
+              href="https://www.instagram.com/wicys_sathyabama/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -139,6 +139,34 @@ export default function Footer() {
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
               </svg>
               <span>Instagram</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/wicys-sathyabama-student-chapter/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.8rem",
+                padding: "0.5rem 1rem",
+                border: "1px solid rgba(255, 255, 255, 0.1)",
+                borderRadius: "8px",
+                color: "var(--color-cream)",
+                textDecoration: "none",
+                fontSize: "0.9rem",
+                transition: "all 0.3s ease",
+                background: "rgba(255,255,255,0.02)",
+                marginTop: "1rem"
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--color-gold)"; e.currentTarget.style.background = "rgba(255,255,255,0.05)" }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.1)"; e.currentTarget.style.background = "rgba(255,255,255,0.02)" }}
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>LinkedIn</span>
             </a>
           </div>
         </motion.div>

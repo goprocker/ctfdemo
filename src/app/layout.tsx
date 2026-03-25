@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function RootLayout({
       <body>
         {/* Fixed mural background */}
         <div className="bg-mural">
-          <img src="/images/hero-bg.png" alt="" aria-hidden="true" />
+          <Image src="/images/hero-bg.png" alt="" aria-hidden="true" fill priority style={{ objectFit: 'cover' }} />
         </div>
         <BackgroundMusic />
         {children}
