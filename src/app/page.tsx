@@ -1,12 +1,14 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Countdown from "@/components/Countdown";
 import Gallery from "@/components/Gallery";
 import Flipbook from "@/components/Flipbook";
 import Sponsors from "@/components/Sponsors";
+import ArcaneOrders from "@/components/ArcaneOrders";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -101,17 +103,14 @@ export default function Home() {
                 }
               }}
               style={{
-                fontFamily: "var(--font-heading)",
-                fontSize: "clamp(4rem, 15vw, 10rem)",
-                fontWeight: 900,
+                fontFamily: "var(--font-harry)",
+                fontSize: "clamp(5rem, 18vw, 12rem)",
+                fontWeight: 400,
                 lineHeight: 1,
                 letterSpacing: "0.05em",
-                textShadow: "0 10px 30px rgba(0,0,0,0.8)",
+                color: "var(--color-gold)",
                 display: "flex",
-                background: "linear-gradient(to bottom, #ffffff 30%, #a0a0a0 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                color: "transparent",
+                textShadow: "0 6px 15px rgba(0,0,0,0.9), 0 0 20px rgba(238,186,48,0.4)",
               }}
             >
               {Array.from("OBSCURA").map((char, index) => (
@@ -282,6 +281,9 @@ export default function Home() {
       {/* Gallery Section */}
       <Gallery />
 
+      {/* Arcane Orders Section */}
+      <ArcaneOrders />
+
       {/* Flipbook Section */}
       <section style={{ padding: "4rem 2rem", position: "relative", zIndex: 1 }}>
         <Flipbook />
@@ -289,6 +291,95 @@ export default function Home() {
 
       {/* Sponsors Section */}
       <Sponsors />
+
+      {/* Portal/QR Code Section */}
+      <section style={{ padding: "6rem 2rem", position: "relative", zIndex: 1, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+        <h2 style={{
+          fontFamily: "var(--font-heading)",
+          fontSize: "clamp(2rem, 5vw, 3.5rem)",
+          fontWeight: 700,
+          color: "#d48a20",
+          marginBottom: "0.5rem",
+          letterSpacing: "0.05em",
+          textShadow: "0 2px 10px rgba(0,0,0,0.8)"
+        }}>
+          Open the Portal
+        </h2>
+        <div style={{
+          fontFamily: "var(--font-heading)",
+          fontSize: "0.8rem",
+          color: "rgba(212, 138, 32, 0.7)",
+          letterSpacing: "0.2em",
+          textTransform: "uppercase",
+          marginBottom: "3rem"
+        }}>
+          SCAN TO CLAIM YOUR PLACE IN THE FORBIDDEN CIPHER
+        </div>
+
+        <div style={{
+          background: "var(--color-cream)",
+          padding: "1rem",
+          borderRadius: "16px",
+          position: "relative",
+          marginBottom: "2rem",
+          boxShadow: "0 0 30px rgba(212,138,32,0.3)",
+          display: "inline-block"
+        }}>
+          {/* Decorative corners */}
+          <div style={{ position: "absolute", top: "10px", left: "10px", width: "20px", height: "20px", borderTop: "3px solid #d48a20", borderLeft: "3px solid #d48a20" }}></div>
+          <div style={{ position: "absolute", top: "10px", right: "10px", width: "20px", height: "20px", borderTop: "3px solid #d48a20", borderRight: "3px solid #d48a20" }}></div>
+          <div style={{ position: "absolute", bottom: "10px", left: "10px", width: "20px", height: "20px", borderBottom: "3px solid #d48a20", borderLeft: "3px solid #d48a20" }}></div>
+          <div style={{ position: "absolute", bottom: "10px", right: "10px", width: "20px", height: "20px", borderBottom: "3px solid #d48a20", borderRight: "3px solid #d48a20" }}></div>
+          
+          <div style={{ display: "block", background: "white", padding: "8px", borderRadius: "12px" }}>
+            <Image 
+              src="/qrcode.jpg" 
+              alt="Register QR Code" 
+              width={250} 
+              height={250}
+              style={{ borderRadius: "8px", display: "block" }}
+            />
+          </div>
+        </div>
+
+        <div style={{
+          fontFamily: "var(--font-decorative)",
+          fontSize: "1.2rem",
+          color: "#d48a20",
+          marginBottom: "1.5rem"
+        }}>
+          ✦ Scan to Register ✦
+        </div>
+
+        <a 
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-primary"
+          style={{
+            background: "linear-gradient(to bottom, #d48a20, #804a08)",
+            color: "var(--color-cream)",
+            border: "1px solid rgba(255,255,255,0.2)",
+            textShadow: "none",
+            boxShadow: "0 5px 15px rgba(0,0,0,0.5)",
+            padding: "1rem 2.5rem",
+            marginBottom: "2rem"
+          }}
+        >
+          ✦ Register Now ✦
+        </a>
+
+        <div style={{
+          fontSize: "0.7rem",
+          color: "rgba(255,255,255,0.2)",
+          fontFamily: "var(--font-body)",
+          maxWidth: "80%",
+          textAlign: "center",
+          wordBreak: "break-all"
+        }}>
+          https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform
+        </div>
+      </section>
 
       {/* Footer */}
       <Footer />
