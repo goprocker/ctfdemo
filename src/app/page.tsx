@@ -9,6 +9,7 @@ import Gallery from "@/components/Gallery";
 import Flipbook from "@/components/Flipbook";
 import Sponsors from "@/components/Sponsors";
 import ArcaneOrders from "@/components/ArcaneOrders";
+import Treasures from "@/components/Treasures";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -62,7 +63,7 @@ export default function Home() {
             border: "1px solid rgba(255, 140, 0, 0.4)",
             padding: "0.5rem 1.5rem",
             borderRadius: "30px",
-            marginBottom: "2rem",
+            marginBottom: "4rem",
             backdropFilter: "blur(10px)",
           }}>
             <Link href="/tickets" style={{
@@ -89,7 +90,7 @@ export default function Home() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            marginBottom: "3rem",
+            marginBottom: "5rem",
             textAlign: "center",
           }}>
             <motion.h1 
@@ -141,7 +142,7 @@ export default function Home() {
                 fontSize: "clamp(1rem, 3vw, 2rem)",
                 fontWeight: 700,
                 letterSpacing: "0.5em",
-                marginTop: "-0.5em",
+                marginTop: "1.5rem",
                 display: "flex",
                 alignItems: "center",
                 gap: "1rem"
@@ -283,6 +284,9 @@ export default function Home() {
 
       {/* Arcane Orders Section */}
       <ArcaneOrders />
+
+      {/* Treasures Section */}
+      <Treasures />
 
       {/* Flipbook Section */}
       <section style={{ padding: "4rem 2rem", position: "relative", zIndex: 1 }}>
