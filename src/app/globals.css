@@ -441,7 +441,14 @@ body {
   align-self: center;
 }
 
-/* Responsive */
+/* Responsive Utilities */
+.navbar-header {
+  padding: 1.2rem 2.5rem;
+}
+.navbar-logo {
+  height: 70px;
+}
+
 @media (max-width: 768px) {
   .menu-overlay {
     width: 100%;
@@ -466,6 +473,14 @@ body {
 
   .social-sidebar {
     display: none;
+  }
+
+  /* Added mobile navbar scaling */
+  .navbar-header {
+    padding: 1rem 1rem;
+  }
+  .navbar-logo {
+    height: 45px;
   }
 }
 

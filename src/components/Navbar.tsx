@@ -23,6 +23,7 @@ export default function Navbar() {
     <>
       {/* Sticky Header */}
       <header
+        className="navbar-header"
         style={{
           position: "fixed",
           top: 0,
@@ -32,7 +33,6 @@ export default function Navbar() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          padding: "1.2rem 2.5rem",
           background: "linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 100%)",
         }}
       >
@@ -44,7 +44,8 @@ export default function Navbar() {
             width={200}
             height={70}
             priority
-            style={{ height: "70px", width: "auto", objectFit: "contain" }} 
+            className="navbar-logo"
+            style={{ width: "auto", objectFit: "contain" }} 
           />
         </Link>
 

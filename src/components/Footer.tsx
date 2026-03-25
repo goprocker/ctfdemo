@@ -21,7 +21,7 @@ export default function Footer() {
           transition={{ duration: 0.8 }}
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "4rem",
             marginBottom: "4rem",
           }}
