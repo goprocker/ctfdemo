@@ -16,7 +16,7 @@ export default function Flipbook() {
     >
       <div className="flipbook-container">
         <div className="flipbook-header">
-          <span>Sponsor Brochure Flipbook • Page {currentPage} / {totalPages}</span>
+          <span>Rule Book • Page {currentPage} / {totalPages}</span>
           <div className="flipbook-controls">
             <a
               href="/Samgatha_Vashisht_Brochure.pdf"
@@ -58,11 +58,11 @@ export default function Flipbook() {
                 S
               </div>
               <div>
-                <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.5rem", fontWeight: 700, color: "#fff" }}>
-                  IIITDM
+                <div style={{ fontFamily: "var(--font-heading)", fontSize: "1.2rem", fontWeight: 700, color: "#fff" }}>
+                  SATHYABAMA
                 </div>
-                <div style={{ fontSize: "0.7rem", letterSpacing: "0.2em", color: "rgba(255,255,255,0.5)" }}>
-                  KANCHEEPURAM
+                <div style={{ fontSize: "0.6rem", letterSpacing: "0.2em", color: "rgba(255,255,255,0.5)", whiteSpace: "nowrap" }}>
+                  INSTITUTE OF SCIENCE AND TECHNOLOGY
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ export default function Flipbook() {
               color: "var(--color-text-muted)",
               letterSpacing: "0.2em",
             }}>
-              SPONSORSHIP BROCHURE
+              RULE BOOK
             </div>
             <div style={{
               fontSize: "0.8rem",

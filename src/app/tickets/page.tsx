@@ -151,7 +151,7 @@ export default function Tickets() {
                 textTransform: "uppercase",
                 background: "#d4a853",
               }}>
-                IIITDM STUDENTS
+                SATHYABAMA STUDENTS
               </button>
               
               <button className="btn-solid" style={{
@@ -163,7 +163,7 @@ export default function Tickets() {
                 textTransform: "uppercase",
                 background: "#d4a853",
               }}>
-                NON-IIITDM PARTICIPANTS
+                NON-SATHYABAMA PARTICIPANTS
               </button>
             </div>
           </motion.div>

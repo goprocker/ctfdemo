@@ -63,7 +63,7 @@ export default function Home() {
               textTransform: "uppercase",
             }}>
               <span style={{ color: "var(--color-orange)" }}>●</span>
-              Obscura tickets live : Grab them now and enjoy your events
+              April 10, Sathyabama Institute Of Science & Technology
             </Link>
           </div>
 
@@ -146,7 +146,7 @@ export default function Home() {
                 animate={{ textShadow: ["0px 0px 0px rgba(255,140,0,0)", "0px 0px 20px rgba(255,140,0,0.8)", "0px 0px 0px rgba(255,140,0,0)"] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               >
-                CHRONOSYNC
+                CAPTURE THE FLAG
               </motion.span>
               <motion.span 
                 initial={{ width: 0 }} 
@@ -156,30 +156,7 @@ export default function Home() {
               />
             </motion.div>
             
-            <div style={{
-              position: "absolute",
-              bottom: "-2rem",
-              left: 0,
-              fontFamily: "var(--font-decorative)",
-              color: "var(--color-gold)",
-              letterSpacing: "0.2em",
-              fontSize: "1rem",
-              textTransform: "uppercase"
-            }}>
-              Samgatha
-            </div>
-            <div style={{
-              position: "absolute",
-              bottom: "-2rem",
-              right: 0,
-              fontFamily: "var(--font-decorative)",
-              color: "var(--color-gold)",
-              letterSpacing: "0.2em",
-              fontSize: "1rem",
-              textTransform: "uppercase"
-            }}>
-              Vashisht
-            </div>
+
           </div>
 
           {/* Countdown */}
@@ -224,10 +201,10 @@ export default function Home() {
             gap: "1.5rem"
           }}>
             <p>
-              <strong style={{ color: "var(--color-cream)", fontWeight: 700, fontSize: "1.2rem" }}>OBSCURA</strong> is the new unified identity of <span style={{ color: "var(--color-orange)" }}>Samgatha × Vashisht</span> — the flagship techno-cultural fest of IIITDM Kancheepuram. It is the collision of innovation and tradition, engineering and artistry, where 5,000+ minds from premier institutions ignite five days of code, creativity, and culture.
+              <strong style={{ color: "var(--color-cream)", fontWeight: 700, fontSize: "1.2rem" }}>OBSCURA</strong> is the new unified identity of <span style={{ color: "var(--color-orange)" }}>Samgatha × Vashisht</span> — the flagship techno-cultural fest of Sathyabama Institute of Science and Technology. It is the collision of innovation and tradition, engineering and artistry, where 5,000+ minds from premier institutions ignite five days of code, creativity, and culture.
             </p>
             <p style={{ color: "var(--color-text-secondary)" }}>
-              Under the banner of the theme of this year <strong style={{ color: "var(--color-gold)" }}>Chronosync</strong>, this edition transcends time itself — where the ancient meets the futuristic in a spectacle unlike any other.
+              Under the banner of the theme of this year <strong style={{ color: "var(--color-gold)" }}>Capture The Flag</strong>, this edition transcends time itself — where the ancient meets the futuristic in a spectacle unlike any other.
             </p>
           </div>
         </motion.div>
@@ -248,8 +225,8 @@ export default function Home() {
               letterSpacing: "0.05em",
             }}
           >
-            <span className="heading-gradient">ABOUT</span>{" "}
-            <span style={{ color: "var(--color-cream)" }}>THE FEST</span>
+            <span className="heading-gradient">THE ANCIENT</span>{" "}
+            <span style={{ color: "var(--color-cream)" }}>PROPHECY</span>
           </motion.h2>
 
           <motion.div
@@ -269,10 +246,13 @@ export default function Home() {
             }}
           >
             <p>
-              Join us for Obscura 2026, the flagship techno-cultural fest of IIITDM Kancheepuram, a five-day celebration of innovation, creativity, and culture.
+              In the deep annals of the Forbidden Archive, there exists a cipher known only as OBSCURA — woven from shadow, starlight, and the darkest threads of arcane knowledge. For centuries, it has remained unbroken, its secrets guarded by enchantments that bend the very fabric of logic.
             </p>
             <p>
-              The fest brings together 5,000+ bright minds from top institutions across India, uniting engineers, designers, and creators on one dynamic stage.
+              The Council of WiCyS has opened the vaults. The scrolls are unsealed. Brave apprentices of the digital arts are now summoned to prove their mastery over cryptographic enchantments, steganographic glyphs, web fortress vulnerabilities, and the mysteries of binary incantations.
+            </p>
+            <p style={{ fontStyle: "italic", color: "var(--color-cream)" }}>
+              "The cipher is not broken by strength, but by seeing what others dare not look at."
             </p>
             
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginTop: "1rem" }}>

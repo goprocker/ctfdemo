@@ -37,30 +37,11 @@ export default function Navbar() {
       >
         {/* Left: Logo */}
         <Link href="/" style={{ display: "flex", alignItems: "center", gap: "0.75rem", textDecoration: "none" }}>
-          <div style={{
-            width: 40, height: 40, borderRadius: "50%",
-            background: "radial-gradient(circle, #f5e6c8 30%, #d4a853 100%)",
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontSize: "1.2rem", fontWeight: 700, color: "#3A0A0D",
-            fontFamily: "var(--font-heading)",
-          }}>
-            S
-          </div>
-          <div>
-            <div style={{
-              fontFamily: "var(--font-heading)", fontWeight: 700,
-              fontSize: "1rem", letterSpacing: "0.15em", color: "#fff",
-            }}>
-              IIITDM
-            </div>
-            <div style={{
-              fontFamily: "var(--font-body)", fontSize: "0.6rem",
-              letterSpacing: "0.2em", color: "rgba(255,255,255,0.6)",
-              textTransform: "uppercase",
-            }}>
-              Kancheepuram
-            </div>
-          </div>
+          <img 
+            src="/Wicys%20Logo.png" 
+            alt="WiCyS Logo" 
+            style={{ height: "70px", width: "auto", objectFit: "contain" }} 
+          />
         </Link>
 
         {/* Right: Bird icon + hamburger */}

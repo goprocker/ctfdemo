@@ -49,7 +49,7 @@ export default function Footer() {
               letterSpacing: "0.05em",
               maxWidth: "280px"
             }}>
-              Chronosync — Where Ancient Meets Future
+              Capture The Flag — Where Ancient Meets Future
             </p>
           </div>
 
@@ -67,11 +67,11 @@ export default function Footer() {
               CONTACT US
             </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}>
-              <a href="mailto:obscura@iiitdm.ac.in" style={{
+              <a href="mailto:team@sathyabama-wicys.org" style={{
                 display: "flex", alignItems: "center", gap: "1rem", color: "var(--color-text-secondary)", textDecoration: "none", fontSize: "0.9rem", transition: "color 0.3s"
               }}>
                 <Mail size={18} />
-                obscura@iiitdm.ac.in
+                team@sathyabama-wicys.org
               </a>
               <a href="tel:+919391131165" style={{
                 display: "flex", alignItems: "center", gap: "1rem", color: "var(--color-text-secondary)", textDecoration: "none", fontSize: "0.9rem", transition: "color 0.3s"
@@ -84,12 +84,11 @@ export default function Footer() {
               }}>
                 <MapPin size={18} style={{ marginTop: "4px", flexShrink: 0 }} />
                 <span>
-                  IIITDM Kancheepuram,<br/>
-                  Melakkottaiyur, Nellikuppam Road,<br/>
-                  Near Kandigai,<br/>
-                  Off Vandalur-Kelambakkam Road,<br/>
-                  Chennai, Tamil Nadu,<br/>
-                  India - 600127
+                  <span style={{ whiteSpace: "nowrap" }}>Sathyabama Institute of Science and Technology</span><br/>
+                  Jeppiaar Nagar,<br/>
+                  Rajiv Gandhi Salai,<br/>
+                  Chennai - 600 119,<br/>
+                  Tamil Nadu, India
                 </span>
               </div>
               <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" style={{
@@ -161,7 +160,7 @@ export default function Footer() {
             letterSpacing: "0.05em",
             textAlign: "center"
           }}>
-            © 2026 OBSCURA Chronosync — IIITDM Kancheepuram. All rights reserved.
+            © 2026 OBSCURA Capture The Flag — Sathyabama Institute of Science and Technology. All rights reserved.
           </p>
           
           <button 

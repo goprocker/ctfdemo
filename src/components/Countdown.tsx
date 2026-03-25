@@ -12,8 +12,8 @@ export default function Countdown() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    // Target date: March 27, 2026 (fest date)
-    const targetDate = new Date("2026-03-27T00:00:00+05:30").getTime();
+    // Target date: April 10, 2026 (fest date)
+    const targetDate = new Date("2026-04-10T00:00:00+05:30").getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
